@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "b86c7c8a-7007-41fa-9ed6-4cd67d240c25",
+		"name": "Bootcamp3rdEdition",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "express-calculator",
+			"item": [
+				{
+					"name": "sumar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/operacion/sum?n1=5&n2=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"operacion",
+								"sum"
+							],
+							"query": [
+								{
+									"key": "n1",
+									"value": "5"
+								},
+								{
+									"key": "n2",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "restar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/operacion/sub?n1=5&n2=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"operacion",
+								"sub"
+							],
+							"query": [
+								{
+									"key": "n1",
+									"value": "5"
+								},
+								{
+									"key": "n2",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "multiplicar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/operacion/mul?n1=5&n2=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"operacion",
+								"mul"
+							],
+							"query": [
+								{
+									"key": "n1",
+									"value": "5"
+								},
+								{
+									"key": "n2",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dividir",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/operacion/div?n1=5&n2=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"operacion",
+								"div"
+							],
+							"query": [
+								{
+									"key": "n1",
+									"value": "5"
+								},
+								{
+									"key": "n2",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
