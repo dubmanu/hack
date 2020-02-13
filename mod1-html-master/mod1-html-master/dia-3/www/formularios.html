@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formularios</title>
+</head>
+
+<body>
+  <header>
+    <h1>Formularios en HTML</h1>
+    <nav>
+      <a href="/">Volver á portada</a>
+    </nav>
+
+  </header>
+
+  <form action="formularios.html" method="GET">
+    <fieldset>
+      <legend>Datos personais</legend>
+      <ul>
+        <li>
+          <label for="nome">Nome:</label>
+          <input id="nome" name="nome" type="text" required>
+        </li>
+        <li>
+          <label for="email">Email:</label>
+          <input id="email" name="email" type="email">
+        </li>
+        <li>
+          <label for="web">Páxina web:</label>
+          <input id="web" name="web" type="url">
+        </li>
+        <li>
+          <label for="password">Contrasinal</label>
+          <input id="password" name="password" type="password">
+        </li>
+        <li>
+          <label for="birth">Data de nacemento</label>
+          <input id="birth" name="birth" type="date" min="2019-01-01" max="2019-12-31">
+        </li>
+        <li>
+          <label for="photo">Foto</label>
+          <input id="photo" name="photo" type="file">
+        </li>
+        <li>
+          <label for="provincia">Provincia</label>
+
+          <select name="provincia" id="provincia" required>
+            <option value="">--</option>
+            <optgroup label="Provincias GUAIS">
+              <option value="CO">A Coruña</option>
+              <option>Lugo</option>
+            </optgroup>
+            <optgroup label="Provincias MENOS GUAIS">
+              <option selected>Ourense</option>
+              <option>Pontevedra</option>
+            </optgroup>
+          </select>
+        </li>
+
+        <li>
+          <label for="cidade">Cidade</label>
+          <select name="cidade" id="cidade" multiple size="2">
+            <option>Vigo</option>
+            <option>Ferrol</option>
+            <option>Coruña</option>
+            <option>Viveiro</option>
+            <option>Burela</option>
+          </select>
+        </li>
+
+        <li>
+          Pokemon: <input type="text" name="pokemon" list="poke">
+          <datalist id="poke">
+            <option>Pikachu</option>
+            <option>Chantada</option>
+            <option>Charmander</option>
+            <option>Doraemon</option>
+            <option>Domingo</option>
+            <option>Lugo</option>
+          </datalist>
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>Biografía</legend>
+      <textarea name="bio" id="bio" maxlength="280" minlength="10"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferencias</legend>
+      <ul>
+        <li>Gústanche os pementos:
+          <label for="si">Si</label>
+          <input id="si" name="pementos" type="radio" value="si" checked>
+          <label for="no">Non</label>
+          <input id="no" name="pementos" type="radio" value="no">
+          <label for="aveces">A veces</label>
+          <input id="aveces" name="pementos" type="radio" value="aveces">
+        </li>
+        <li>
+          <label for="newsletter">Recibir newsletter</label>
+          <input id="newsletter" name="newsletter" type="checkbox" value="true">
+        </li>
+      </ul>
+    </fieldset>
+    <button type="submit">Enviar</button>
+    <button type="reset">Borrar</button>
+    <button>Tamén envía</button>
+  </form>
+  <button>Non fai nada</button>
+</body>
+
+</html>
