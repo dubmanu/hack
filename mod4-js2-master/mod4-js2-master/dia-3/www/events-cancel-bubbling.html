@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Eventos</title>
+
+</head>
+
+<body>
+  <header>
+    <h1>Event: cancelando eventos e bubbling</h1>
+  </header>
+  <ul>
+    <li><a href="https://hack-a-bos.com/">Hackabos</a></li>
+    <li><a href="https://google.com/">Google</a></li>
+    <li><a href="/events-basic.html">Eventos básicos</a></li>
+  </ul>
+
+  <h2>Validando formulario</h2>
+
+  <form action="">
+    <fieldset>
+      <legend>Acceso</legend>
+      <label for="user">User</label>
+      <input type="text" name="user" id="user">
+
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password">
+
+      <button>Login</button>
+    </fieldset>
+    <p class="error"></p>
+  </form>
+
+  <h2>Bubbling</h2>
+  <section>
+    <ul class="button-list">
+      <li><button class="deep">Deep button</button></li>
+    </ul>
+  </section>
+
+
+  <script type="module" src="/js/events-cancel-bubbling.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  background: rebeccapurple;
+  color: gold;
+  padding: 1rem;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}

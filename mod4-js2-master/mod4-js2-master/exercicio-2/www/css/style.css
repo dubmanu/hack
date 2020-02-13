@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+button {
+  padding: 0.4rem;
+  background-color: steelblue;
+  border: 0;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+button.danger {
+  background-color: red;
+}
+
+header,
+section {
+  max-width: 30rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header h1 {
+  text-align: center;
+}
+
+section#ui {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+section#ui form {
+  grid-column: 1 / 3;
+
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr auto;
+}
+
+section#ui form fieldset {
+  border: none;
+}
+
+section#ui form label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+section#ui form input {
+  width: 100%;
+  padding: 0.25rem;
+  font-size: 0.8rem;
+}
+
+section#ui form button {
+  align-self: flex-end;
+}
+
+/* TODO LIST */
+
+section#list ul {
+  padding-top: 1rem;
+  border-top: 1px solid #aaa;
+}
+
+section#list ul li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+section#list ul li input {
+  margin-top: 3px;
+}
+
+section#list ul li.done p {
+  text-decoration: line-through;
+}

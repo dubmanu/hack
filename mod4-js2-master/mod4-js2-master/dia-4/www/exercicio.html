@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Selects sincronizados</title>
+
+  <!-- <link rel="stylesheet" href="/css/select.css" /> -->
+</head>
+
+<body>
+  <form name="local">
+
+    <fieldset>
+      <label for="provincia">Provincia</label>
+      <select name="provincia" id="provincia">
+        <option>Selecciona provincia...</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <label for="cidade">Cidade</label>
+      <select name="cidade" id="cidade" disabled>
+
+      </select>
+    </fieldset>
+
+  </form>
+  <script type="module" src="/js/select-sync.js"></script>
+</body>
+
+</html>
